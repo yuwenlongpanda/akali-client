@@ -5,5 +5,5 @@
 
 import ajax from './ajax'
 
-// 登陆接口
-export const reqLogin = ({username, password}) => ajax('/user/login',{username, password}, 'POST')
+// 商品搜索接口
+export const reqSearch = ({key}) => ajax('/item/search',{key})

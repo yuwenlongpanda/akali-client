@@ -3,15 +3,20 @@
  */
 import {combineReducers} from 'redux'
 
-function xxx(state=0, action) {
-  return state
-}
 
-function yyy(state=0, action) {
-  return state
+import {ITEM_SEARCH} from './action-types';
+
+const initItemList = []
+
+function itemList(state=initItemList, action) {
+  switch (action.type) {
+    case ITEM_SEARCH:
+      return action.data
+    default:
+      return state
+  }
 }
 
 export default combineReducers({
-  xxx,
-  yyy
+  itemList
 })

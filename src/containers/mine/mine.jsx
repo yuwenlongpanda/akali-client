@@ -2,13 +2,14 @@
 主路由组件
  */
 import React, {Component} from 'react';
-import {NavBar} from 'antd-mobile';
+
+import MyNavBar from '../../components/navBar/navBar';
 
 export default class Mine extends Component {
   render() {
     return (
         <div>
-          <NavBar mode="light" leftContent={"我的"}></NavBar>
+          <MyNavBar title="我的"/>
         </div>
     )
   }

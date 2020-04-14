@@ -1,14 +1,12 @@
-/*
-主路由组件
- */
 import React, {Component} from 'react';
-import {NavBar} from 'antd-mobile';
+
+import MyNavBar from '../../components/navBar/navBar';
 
 export default class Cart extends Component {
   render() {
     return (
         <div>
-          <NavBar mode="light" leftContent={"购物车"}></NavBar>
+          <MyNavBar title="购物车"/>
         </div>
     )
   }

@@ -5,20 +5,18 @@ import {Provider} from 'react-redux';
 
 import store from './redux/store';
 import Login from './containers/login/login';
-import Mine from './containers/mine/mine';
-import Cart from './containers/cart/cart';
-import Home from './containers/home/home';
+import Register from './containers/register/register';
+import Main from './containers/main/main';
+
+import './assets/css/index.less'
 
 ReactDOM.render((
     <Provider store={store}>
       <HashRouter>
         <Switch>
-          <Switch>
             <Route path='/login' component={Login}></Route>
-            <Route path='/mine' component={Mine}></Route>
-            <Route path='/cart' component={Cart}></Route>
-            <Route component={Home}></Route>
-          </Switch>
+            <Route path='/register' component={Register}></Route>
+            <Route component={Main}></Route>
         </Switch>
       </HashRouter>
     </Provider>
