@@ -7,8 +7,9 @@ import store from './redux/store';
 import Login from './containers/login/login';
 import Register from './containers/register/register';
 import Main from './containers/main/main';
+import GoodsDetail from './containers/goods/goodsDetail';
 
-import './assets/css/index.less'
+import './assets/css/index.less';
 
 ReactDOM.render((
     <Provider store={store}>
@@ -16,6 +17,7 @@ ReactDOM.render((
         <Switch>
             <Route path='/login' component={Login}></Route>
             <Route path='/register' component={Register}></Route>
+            <Route path='/goodsDetail' component={GoodsDetail}></Route>
             <Route component={Main}></Route>
         </Switch>
       </HashRouter>

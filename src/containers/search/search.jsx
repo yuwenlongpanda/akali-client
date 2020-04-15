@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 
 import {search} from '../../redux/actions';
 import MyNavBar from '../../components/navBar/navBar';
+
 import '../../assets/css/search.less';
 
 class Search extends Component {
@@ -41,7 +42,7 @@ class Search extends Component {
           <List>
             <Grid data={itemList}  columnNum={2}
                   renderItem={dataItem => (
-                      <div className="dataItem" >
+                      <div className="dataItem" onClick={() => {this.props.history.replace('/goodsDetail')}}>
                         <img src={dataItem.icon} className="dataItem-img" />
                         <div className="dataItem-div">
                           <span>{dataItem.text}</span>

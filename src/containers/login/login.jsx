@@ -56,7 +56,7 @@ export default class Login extends Component {
               <WhiteSpace/>
               <Button type='primary' onClick={this.login}>登&nbsp;&nbsp;&nbsp;录</Button>
               <WhiteSpace/>
-              <Button type='ghost' onClick={val => {this.props.history.replace('/register')}}>注&nbsp;&nbsp;&nbsp;册</Button>
+              <Button type='ghost' onClick={() => {this.props.history.replace('/register')}}>注&nbsp;&nbsp;&nbsp;册</Button>
             </List>
           </WingBlank>
         </div>
