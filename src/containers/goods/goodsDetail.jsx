@@ -1,9 +1,12 @@
 import React, {Component} from 'react';
-import {Badge, Carousel, Icon, NavBar, WhiteSpace} from 'antd-mobile';
+import {Badge, Carousel, WhiteSpace} from 'antd-mobile';
+
+import CommonBar from '../../components/navBar/commonBar';
 
 import '../../assets/css/goodsdetail.less';
 
 export default class GoodsDetail extends Component {
+
   state = {
     data: [require(`../../assets/images/goods/1.jpg`),
            require(`../../assets/images/goods/2.dpg`),
@@ -13,11 +16,11 @@ export default class GoodsDetail extends Component {
            require(`../../assets/images/goods/6.dpg`)],
     imgHeight: 367.5,
   }
+
   render() {
     return (
         <div className="goods-page">
-          <NavBar  icon={<Icon type="left" />} mode="light"
-                   onLeftClick={() => {this.props.history.replace("/search")}}>商品详情</NavBar>
+          <CommonBar/>
           <Carousel
               autoplay={false}
               infinite
@@ -101,7 +104,6 @@ export default class GoodsDetail extends Component {
             </div>
             <button className="btn-orange">加入购物车</button>
             <button onClick={()=>{
-              this.buyImmediately()
             }}>购买</button>
           </div>
         </div>

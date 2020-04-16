@@ -1,6 +1,3 @@
-/*
-主路由组件
- */
 import React, {Component} from 'react';
 
 import MyNavBar from '../../components/navBar/navBar';

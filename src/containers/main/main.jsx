@@ -3,9 +3,9 @@ import NavFooter from '../../components/navFooter/navFooter';
 import {Redirect, Route, Switch} from 'react-router-dom';
 
 import Mine from '../mine/mine';
-import Cart from '../cart/cart';
 import Home from '../home/home';
 import Search from '../search/search';
+import CartList from '../cart/cartList';
 
 export default class Main extends Component {
   render() {
@@ -14,7 +14,7 @@ export default class Main extends Component {
           <Switch>
             <Route path='/home' component={Home}></Route>
             <Route path='/search' component={Search}></Route>
-            <Route path='/cart' component={Cart}></Route>
+            <Route path='/cart' component={CartList}></Route>
             <Route path='/mine' component={Mine}></Route>
             <Redirect to="/home"/>
           </Switch>
