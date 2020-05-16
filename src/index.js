@@ -9,6 +9,7 @@ import Register from './containers/register/register';
 import Main from './containers/main/main';
 import GoodsDetail from './containers/goods/goodsDetail';
 import Cart from './containers/cart/cart';
+import Order from './containers/order/order';
 
 import './assets/css/index.less';
 
@@ -20,6 +21,7 @@ ReactDOM.render((
             <Route path='/register' component={Register}></Route>
             <Route path='/goodsDetail' component={GoodsDetail}></Route>
             <Route path='/cartItem' component={Cart}></Route>
+            <Route path='/order' component={Order}></Route>
             <Route component={Main}></Route>
         </Switch>
       </HashRouter>

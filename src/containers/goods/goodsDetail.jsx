@@ -96,6 +96,10 @@ export default class GoodsDetail extends Component {
               共1种颜色可选
             </div>
           </div>
+          <div className="goods-tip-1">
+            <div style={{marginTop: '20px', fontSize: '12px'}}>自如全屋智能</div>
+            <div style={{marginTop: '5px', fontSize: '11px'}}>有赞提供技术支持</div>
+          </div>
           {/*客服 购物车 购买*/}
           <div className="fixed-btns">
             <div className="icon">
@@ -103,8 +107,7 @@ export default class GoodsDetail extends Component {
               <span>客服</span>
             </div>
             <button className="btn-orange">加入购物车</button>
-            <button onClick={()=>{
-            }}>购买</button>
+            <button onClick={() => {this.props.history.replace('/order')}}>购买</button>
           </div>
         </div>
     )
