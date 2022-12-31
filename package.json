@@ -19,9 +19,9 @@
   "devDependencies": {
     "babel-plugin-import": "^1.13.0",
     "less": "^2.7.3",
-    "less-loader": "^4.0.6",
+    "less-loader": "^11.1.0",
     "react-app-rewired": "^1.6.2",
-    "react-scripts": "1.1.0",
+    "react-scripts": "5.0.1",
     "redux-devtools-extension": "^2.13.2"
   },
   "scripts": {
